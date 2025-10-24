@@ -30,104 +30,134 @@ Publish the website in the LocalHost.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dribbble Clone</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0"/>
+<title>Dribble Simple Clone-Dhanavishni M</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet">
+<style>
+.navbar-dark-custom
+{background-color:rgb(238, 36, 76)}
+.btn-dribble
+{background-color:chartreuse;color:darkorchid;border:none;}
+.cta-banner  
+{background-color:lightpink; padding:30px 0; text-align: center;}
+.shot-card-img
+{border-radius: 8px; width: 100%; height:200px;object-fit: cover;}
+.app-footer
+{background-color: lightcoral;border-top: 1px solidb#eb3e55; padding:20px 0;text-align:center;}
+</style>
 </head>
 <body>
-
-
-  <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Dribbble Clone</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Inspiration</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Find Work</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Learn Design</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Go Pro</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
-          <li class="nav-item">
-            <a class="btn btn-dark ms-2" href="#">Sign up</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <section class="py-5 text-center bg-light">
-    <div class="container">
-      <h1 class="display-5 fw-bold">Discover the world’s top designers & creatives</h1>
-      <p class="lead">Dribbble is the leading destination to find & showcase creative work.</p>
-      <a href="#" class="btn btn-dark btn-lg mt-3">Get Started</a>
-    </div>
-  </section>
-
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center fw-bold">Explore Shots</h2>
-      <div class="row g-4">
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img src="image a.jpg" class="card-img-top" alt="Shot 1">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img src="image b.jpg"card-img-top" alt="Shot 2">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img src="image c.jpg" class="card-img-top" alt="Shot 3">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img src="image d.jpg" class="card-img-top" alt="Shot 4">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img src="image e.jpg" class="card-img-top" alt="Shot 5">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img src="image f.jpg" class="card-img-top" alt="Shot 6">
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <section class="py-5 bg-dark text-white text-center">
-    <div class="container">
-      <h2 class="fw-bold">Join the world’s leading design community</h2>
-      <p class="lead mb-4">Sign up today and showcase your work to millions of creatives.</p>
-      <a href="#" class="btn btn-light btn-lg">Sign Up Free</a>
-    </div>
-  </section>
-
-  <footer class="py-4 bg-light border-top text-center">
-    <div class="container">
-      <p class="mb-0">© 2025 Dribbble Clone | Designed by <strong>Dhanavishni M (25016333)</strong></p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<nav class="navbar navbar-expand-lg navbar-dark-custom py-3">
+<div class="container">
+<a class="navbar-brand fw-bold fs-4 text-light"href="#">dribbble</a>
+<button class="navbar-toggler"type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse"id="navbarNav">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link text-white-50"href="#">Shots</a></li>
+<li class="nav-item"><a class="nav-link text-white-50"href="#">Designer</a></li>
+<li class="nav-item"><a class="nav-link text-white-50"href="#">Community</a></li>
+</ul>
+<a href="#" class="btn btn-outline-light btn-sm me-2">Sign up</a>
+<a href="#" class="btn btn-dribbble btn-sm">Sign in</a>
+</div>
+</div>
+</nav>
+<div class="cta-banner mb-4">
+<div class="container">
+<h4 class="fw-bold mb-2">What are you working on?</h4>
+<p class="text-muted mb-3">Dribbble is the community for showcasing creative work.</p>
+<a href="#" class="btn btn-light border me-2">Learn more</a>
+<a href="#" class="btn btn-dribbble">Join Now</a>
+</div>
+</div>
+<div class="container mb-5">
+<div class="d-flex justify-content-between align-items-center mb-4">
+<h5 class="fw-bold">Popular Shots</h5>
+</div>
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+<div class="col">
+<img src="image1.webp"
+class="shot-card-img" alt="Design 1">
+<p class="fw-semibold mb-0 mt-2">Design 1</p>
+<span class="text-muted small">200k Likes|100000 Views</span>
+</div>
+<div class="col">
+<img src="image2.jpeg"
+class="shot-card-img" alt="Design 2">
+<p class="fw-semibold mb-0 mt-2"> Design 2</p>
+<span class="text-muted small">92000k Likes|320000 Views</span>
+</div>
+<div class="col">
+<img src="image3.jpeg"
+class="shot-card-img" alt="Design 3">
+<p class="fw-semibold mb-0 mt-2"> Design 3</p>
+<span class="text-muted small">50000k Likes|1000000 Views</span>
+</div>
+<div class="col">
+<img src="image4.jpeg"
+class="shot-card-img" alt="Design 4">
+<p class="fw-semibold mb-0 mt-2"> Design 4</p>
+<span class="text-muted small">25000k Likes|41000 Views</span>
+</div>
+<div class="col">
+<img src="image5.jpeg"
+class="shot-card-img" alt="Design 5">
+<p class="fw-semibold mb-0 mt-2">Design 5</p>
+<span class="text-muted small">500k Like|4700 Views</span>
+</div>
+<div class="col">
+<img src="image6.jpeg"
+class="shot-card-img" alt="Design 6">
+<p class="fw-semibold mb-0 mt-2">Design 6</p>
+<span class="text-muted small">300K Like|53000 Views</span>
+</div>
+<div class="col">
+<img src="image7.jpeg"
+class="shot-card-img" alt="Design 7">
+<p class="fw-semibold mb-0 mt-2">Design 7 </p>
+<span class="text-muted small">500k Like|78000 Views</span>
+</div>
+<div class="col">
+<img src="image8.jpeg"
+class="shot-card-img" alt="Design 8">
+<p class="fw-semibold mb-0 mt-2">Design 8</p>
+<span class="text-muted small">800k Likes|65000 Views</span>
+</div>
+<div class="col">
+<img src="image9.jpeg"
+class="shot-card-img" alt="Design 9">
+<p class="fw-semibold mb-0 mt-2">Design 9</p>
+<span class="text-muted small">300k Likes|58000 Views</span>
+</div>
+<div class="col">
+<img src="image10.jpeg"
+class="shot-card-img" alt="Design 10">
+<P class="fw-semibold mb-0 mt-2"> Design 10</P>
+<span class="text-muted small">269k Likes|48000 Views</span>
+</div>
+</div>
+</div>
+<footer class="app-footer">
+<div class="container">
+<p class="text-muted mb-0 small">
+2025 Dribbble Simple Clone|Designed by<strong>Dhanavishni M(25016333)</strong>
+</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
+  
 ```
 
 ## OUTPUT:
+![alt text](<Screenshot (72).png>)
 
-![alt text](<Screenshot 2025-10-24 175840.png>)
 
 
 ## RESULT:
